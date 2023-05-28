@@ -1,0 +1,654 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SABAREEZA TECHNOLOGIES</title>
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+    <script type="text/javascript">
+      function sendEmail(){
+
+        var FirstName = $("#txt_firstname").val();
+        var LastName = $("#txt_lastname").val();
+        var Email = $("#mail_email").val();
+        var Qualification = $("#txt_qualification").val();
+        var Phone = $("#txt_phone").val();
+        var Experience = $("#txt_experience").val();
+        var Requirement = $("#db_Career").val();
+
+              // alert(FirstName)
+
+        Email.send({
+          Host: "smtp.gmail.com",
+           Username: "sender@email_address.com",
+          Password: "Enter your password",
+           To: 'receiver@email_address.com',
+           From: "sender@email_address.com",
+           Subject: "Sending Email using javascript",
+          Body:"txt_firstname,txt_lastname,mail_email,txt_qualification,txt_phone,txt_experience,db_Career,"
+         })
+        .then(function (message) {
+            alert("mail sent successfully")
+           });
+      }
+    </script>
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke px-0">
+          <h1> <a class="navbar-brand" href="index.html">
+            SABAREEZA TECHNOLOGIES
+              </a></h1>
+          <!-- if logo is image enable this   
+  <a class="navbar-brand" href="#index.html">
+      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+  </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item  @@home__active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item @@services__active">
+                      <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="career.html">Career</a>
+                </li>
+                  <!--/search-right
+                  <div class="search-right mx-lg-3">
+                      <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+                      <!-- search popup 
+                      <div id="search" class="pop-overlay">
+                          <div class="popup">
+
+                              <form action="error.html" method="GET" class="search-box">
+                                  <input type="search" placeholder="Enter Keyword" name="search" required="required"
+                                      autofocus="">
+                                  <button type="submit" class="btn"><span class="fa fa-search"
+                                          aria-hidden="true"></span></button>
+                              </form>
+
+                          </div>
+                          <a class="close" href="#close">×</a>
+                      </div>
+                      <!-- /search popup -->
+                  </div>
+                  <!--//search-right-->
+                  <div class="box-support ml-lg-3 mr-lg-4">
+                      <p>For Support Call <span class="fa fa-headphones"></span></p>
+                      <h5><a href="tel:0422-2677886">0422-2677886</a></h5>
+                  </div>
+                  <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!--/header-->
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-4 py-md-3">
+            <h2 class="title">Career</h2>
+            <ul class="breadcrumbs-custom-path mt-2 text-center">
+                <li><a href="index.html">Home</a></li>
+                <!--<li class="mx-2">/ </li>
+                <li class="active"> Pages </li>-->
+                <li class="mx-2">/ </li>
+                <li class="active"> Career</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Career -->
+<section class="w3l-contact-7 py-5">
+<div class="w3-career py-4  position-relative" id="career">
+  <img class="position-absolute img-fluid agile-img" src="assets/images/4.png" alt="" width="690" height="100" />
+    <!--<img class="position-absolute img-fluid agile-img" src="images/i1.png" alt="" />-->
+    <div class="container py-lg-5">
+        <div class="row register-form py-md-5">
+            <div class="offset-lg-2"></div>
+            <!-- register details -->
+            <div class="offset-lg-4">
+            </div>
+
+            <!--<div class="col-lg-6 wthree-form-left py-md-5 pt-sm-5 pb-sm-3">
+                <div class="title-wthree">
+                    <h3 class="agile-title">
+                        Career
+                    </h3>
+                    <span></span>
+                </div>
+                <!-- register form grid -->
+                <div class="register-top1">
+
+                    <form action="mailto:ranjithrengaraj24@gmail.com" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                    <label class="mb-0">
+                                        <span class="fa fa-user"></span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        <b>First name</b>
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="" name="FirstName" required="" id="txt_firstname">
+                                </div>
+                                <div class="col-md-5">
+                                    <label>
+                                        <b>Last name</b>
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="" name="LastName" required id="txt_lastname">
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="row">
+                                <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                    <label class="mb-0">
+                                        <span class="fa fa-envelope-open"></span>
+                                    </label>
+                                </div>
+                                <div class="col-md-11">
+                                    <label>
+                                        <b>Email</b>
+                                    </label>
+                                    <input class="form-control" type="email" placeholder="" name="email" required id="'mail_email">
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="row">
+                                <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                    <label class="mb-0">
+                                        <span class="fa fa-graduation-cap"></span>
+                                    </label>
+                                </div>
+                                <div class="col-md-11">
+                                    <label>
+                                        <b>Qualification</b>
+                                    </label>
+                                    <input class="form-control" type="Qualification" placeholder="" name="qualification" required id="txt_qualification">
+                                </div>
+                            </div>
+                            
+                                <div class="row">
+                                    <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fa fa-phone"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label>
+                                            <b>Phone</b>
+                                        </label>
+                                        <input class="form-control" type="Phone" placeholder="" name="phone" required id="txt_phone">
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="row">
+                                    <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fa fa-tasks"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label>
+                                            <b>Experience</b>
+                                        </label>
+                                        <input class="form-control" type="Experience" placeholder="" name="experience" required id="txt_experience">
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="row">
+                                    <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fa fa-upload"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label>
+                                            <b>Resume</b>
+                                        </label>
+                                        <input class="form-control"type="file" name="file" required id="file_resume">
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="row">
+                                    <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fa fa-asterisk"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label>
+                                            <b>Requirement</b>
+                                        </label>
+                                        <span>
+                                            <div class="panel-body">
+                                                <div id="accordion">
+                                                    <!--<input class=" form-control" type="requirement" placeholder="" name="requirement" required="" id="db_requirement">-->
+                                                    <select name="Requirement" id="db_Career">
+                                                        <option value="">Fresher</option>
+                                                        <option value="">+1 Experience</option>
+                                                        <option value="">+2 Experience</option>
+                                                        <option value="">No Jobs Are Posted Right Now</option>
+                                        </span>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                <!--<div class="form-group">
+                               <div class="row">
+                                   <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                       <label class="mb-0">
+                                           <span class="fas fa-lock"></span>
+                                       </label>
+                                   </div>
+                                   <div class="col-md-11">
+                                       <label>
+                                           password
+                                       </label>
+                                       <input type="password" class="form-control" placeholder="*******" name="Password" id="password1" required="">
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <div class="row">
+                                   <div class="col-md-1 d-md-flex align-items-end justify-content-end px-md-0">
+                                       <label class="mb-0">
+                                           <span class="fas fa-lock"></span>
+                                       </label>
+                                   </div>
+                                   <div class="col-md-11">
+                                       <label>
+                                           confirm password
+                                       </label>
+                                       <input type="password" class="form-control" placeholder="*******" name="Password" id="password2" required="">
+                                   </div>
+                               </div>
+                    </div>-->
+                <div class="row mt-lg-5 mt-3">
+                    <div class="offset-1"></div>
+                    <div class="col-md-5">
+                      <input type="button"class="btn btn-primary btn-style mt-3"value="Submit"
+                      onclick="sendEmail()" />
+                      <!--<button type="submit" class="btn btn-primary btn-style mt-3">Submit</button>-->
+                        <!--<button type="submit" class="btn btn-agile btn-block w-100">register</button>-->
+                         <!--<a href="mailto:ranjithrj2400@gmail.com"<button type="submit" class="btn btn-primary btn-style mt-3">Submit</button></a>-->
+                       <!--<a href="mailto:ranjithrj2400@gmail.com" class="btn btn-style btn-outline-primary mt-md-5 mt-4">SUBMIT</a>-->
+                    </div>
+                </div>
+               
+            </div>
+            <!--  //register form grid ends here -->
+        </div>
+    </div>
+  </div>
+
+    <!-- //register details container -->
+</div>
+</div>
+</form>
+</section>
+
+<!-- //Career -->
+
+
+<!-- footer -->
+<footer class="py-5">
+    <div class="container py-md-3">
+      <div class="footer-grids">
+          <div class="footer-grid left">
+            <h2 class="logo"><a href="index.html"><img src="assets/images/LOGO .png" alt="" width="300" height="120"/></a></h2>
+          </div>
+        <div class="middle">
+          <p>ALL RIGHTS RESERVED BY SABAREEZA TECHNOLOGIES. COPYRIGHT © 2020.</p>
+        </div>
+        <div class="right">
+          <ul class="social">
+            <li><a href="#url"><span class="fa fa-facebook icon_facebook"></span></a></li>
+            <li><a href="#url"><span class="fa fa-twitter icon_twitter"></span></a></li>
+            <li><a href="#url"><span class="fa fa-linkedin icon_linkedin"></span></a></li>
+            <!--<li><a href="#url"><span class="fa fa-dribbble icon_dribbble"></span></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      &#10548;
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+  
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      return true;
+
+ function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+ function validateEmail(email) {
+ var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+ return isEmpty(email) || re.test(email);
+}
+    </script>
+    <!-- /move top -->
+  </footer>
+  <!-- //footer -->
+  
+   <!-- Common jquery plugin -->
+  
+  <!-- responsive tabs -->
+  <script src="assets/js/jquery-1.9.1.min.js"></script>
+  
+  <script src="assets/js/easyResponsiveTabs.js"></script>
+  <!--Plug-in Initialisation-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //Horizontal Tab
+      $('#parentHorizontalTab').easyResponsiveTabs({
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+          var $tab = $(this);
+          var $info = $('#nested-tabInfo');
+          var $name = $('span', $info);
+          $name.text($tab.text());
+          $info.show();
+        }
+      });
+    });
+  </script>
+  
+  <script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+  
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+  
+        fixedContentPos: false,
+        fixedBgPos: true,
+  
+        overflowY: 'auto',
+  
+        closeBtnInside: true,
+        preloader: false,
+  
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+  
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+  
+        fixedContentPos: false,
+        fixedBgPos: true,
+  
+        overflowY: 'auto',
+  
+        closeBtnInside: true,
+        preloader: false,
+  
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
+  
+  
+  <script src="assets/js/particles.js"></script>
+  
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+  <script src="assets/js/owl.carousel.js"></script><!-- owl carousel -->
+  
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+  
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+  
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- //disable body scroll which navbar is in active -->
+  
+  <!--bootstrap-->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- //bootstrap-->
+  
+  
+  </body>
+  
+  </html>
